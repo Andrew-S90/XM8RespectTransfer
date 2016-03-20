@@ -168,8 +168,10 @@ OpenSlidePlayers = {
 
 if((count (allPlayers - allMissionObjects "HeadlessClient_F")) >= _minPlayers) then {
 	_respectListBox ctrlEnable true;
+	_respectTransferButton ctrlEnable true;
 } else {
 	_respectListBox ctrlEnable false;
+	_respectTransferButton ctrlEnable false;
 };
 
 
